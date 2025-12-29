@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang = 'ko'>
+    <head>
+        <meta charset = 'UTF-8'>
+        <title>회원가입</title>
+        <script>
+            function changeColor1(){
+                document.bgColor = 'red';
+                document.fgColor = 'white';
+            }
+            function changeColor2(){
+                document.bgColor = 'blue';
+            }
+        </script>
+    </head>
+    <body>
+        <form action = 'process_test.php' method = 'post'>
+            <textarea name = 'content' rows = '10' cols = '40' disabled>test</textarea><br><br>
+            <input type = 'time' name = 's_date'><br>
+
+            이름 : <input type = 'text' name = 'name' autofocus><br>
+            몸무게 : <input type = 'text' name = 'weight'><br>
+            키 : <input type = 'text' name = 'height' ><br>
+            만족도 : <input type = 'range' name = 'age' min = '0' max = '5' step = '0.5' value = '5'><br>
+            <input type = 'radio' name = 'c1' value = 'music' checked>음악 감상 <br>
+            <input type = 'radio' name = 'c1' value = 'movie'>영화 감상 <br>
+            <input type = 'radio' name = 'c1' value = 'game'>게임<br>
+            <input type = 'button' value = 'RED' onmouseover = 'changeColor1()'>
+            <input type = 'button' value = 'BLUE' onmouseover = 'changeColor2()'><br><br>
+            <input type = 'image' src = 'web/cloud.png' width = '50'><br><br><br>
+            <input type = 'submit' value = '계산'><br><br>
+            
+        </form>
+    </body>
+</html>
